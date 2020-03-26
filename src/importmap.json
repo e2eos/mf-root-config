@@ -1,0 +1,13 @@
+{
+  "imports": {
+    "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js",
+    "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.2.1/lib/system/single-spa.min.js",
+    "@vue-mf/styleguide": "https://storage.googleapis.com/vue.microfrontends.app/styleguide/4a0c5856837141adb28fe9cc44a71e456d4a5705/vue-mf-styleguide.js",
+    "@vue-mf/navbar": "https://storage.googleapis.com/vue.microfrontends.app/navbar/327720d2b06fe8138930951fd97a2fb7d88fdc8b/js/app.js",
+    "@vue-mf/dogs-dashboard": "https://storage.googleapis.com/vue.microfrontends.app/dogs-dashboard/0f474971da27b77b0fb1e4f721539e9d7d4b899c/js/app.js",
+    "@vue-mf/rate-dogs": "https://storage.googleapis.com/vue.microfrontends.app/rate-dogs/2202457c3a6d7a6efccb9fdd74f7a50edeec6f46/js/app.js",
+    "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@3.1.5/dist/vue-router.min.js",
+    "@mf/shared-dependencies-vue": "http://localhost:8080/js/app.js",
+    "@mf/root-config": "http://localhost:9000/main.js"
+  }
+}

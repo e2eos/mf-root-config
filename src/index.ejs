@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue Microfrontends</title>
+  <meta name="importmap-type" content="systemjs-importmap" />
+  <script type="systemjs-importmap" src="importmap.json"></script>
+  <% if (isLocal) { %>
+  <script src="https://cdn.jsdelivr.net/npm/import-map-overrides/dist/import-map-overrides.js"></script>
+  <% } %>
+  <script src="systemjs/system.min.js"></script>
+  <script src="systemjs/extras/amd.min.js"></script>
+  <script src="systemjs/extras/named-exports.min.js"></script>
+</head>
+
+<body>
+  <script>
+    System.import('@mf/root-config');
+  </script>
+  <% if (isLocal) { %>
+    <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
+  <% } %>
+</body>
+
+</html>
